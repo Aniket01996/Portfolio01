@@ -1,0 +1,50 @@
+.card {
+  width: 12rem;
+  height: 13rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid orange;
+  box-shadow: 5px 5px 8px black;
+  padding: 0px 26px 4rem 26px;
+  border-radius: 20px;
+  font-family: 'Satisfy', cursive;
+}
+
+
+.card span:nth-of-type(2) {
+  color: gray;
+  font-size: 20px;
+  position: relative;
+}
+
+.card>img {
+  transform: scale(0.6);
+  margin-bottom: -3rem;
+}
+
+.c-button {
+  color: dodgerblue;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px black;
+}
+
+@media screen and (max-width: 480px) {
+  .card>* {
+    width: auto;
+    gap: 5rem;
+  }
+
+  .c-button {
+    display: none;
+  }
+}

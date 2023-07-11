@@ -1,0 +1,126 @@
+.intro {
+    display: flex;
+    height: 75vh;
+    margin-top: 5rem;
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name {
+    font-family: 'Satisfy', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+}
+
+/* Targetting 1st child of i-name */
+.i-name>:nth-child(1) {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Targetting 2nd child of the i-name class i.e span - Aniket bhalerao */
+.i-name>:nth-child(2) {
+    color: orange;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(3) {
+    font-weight: 100;
+    font-size: 22px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.i-button {
+    text-decoration: none;
+    width: 8rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.i-icons {
+    display: flex;
+    margin-top: 3rem;
+    gap: 0rem;
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+/* Targetting all the child elements inside the i-icons div by using * */
+.i-icons>* {
+    transform: scale(0.5);
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+    transform: scale(0.6);
+}
+
+.i-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.i-pic {
+    width: 80%;
+    height: 60%;
+    /* background-image: linear-gradient(to right, #1F1C18, #BE5869); */
+    background-image: linear-gradient(to right, #1F1C18, orange);
+    /* background-image: linear-gradient(to left bottom, #8E0E00, #1F1C18); */
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.profile {
+    position: relative;
+    width: 92%;
+    height: 91%;
+    padding: 5%;
+    border-radius: 100px 0px 100px 0px;
+}
+
+.i-pic:hover {
+    transform: scale(1.1);
+    transition: linear 0.5s;
+    box-shadow: 5px 5px 30px black;
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+        height: 65rem;
+        gap: 5rem;
+    }
+
+    .i-right {
+        transform: scale(0.9);
+        left: -3rem;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .i-icons {
+        margin-top: 0rem;
+
+    }
+
+    .i-pic {
+        width: 40rem;
+        height: 20rem;
+        margin-top: -4rem;
+    }
+
+}

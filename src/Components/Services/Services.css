@@ -1,0 +1,106 @@
+.services {
+    display: flex;
+    padding: 0.3rem 0 3rem;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+}
+
+.my-services {
+    font-family: 'Satisfy', cursive;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.my-services> :nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.my-services> :nth-child(2) {
+    color: gray;
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.orange {
+    color: orange;
+}
+
+.s-button {
+    font-family: 'Satisfy', cursive;
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards>* {
+    position: absolute;
+}
+#c1 {
+    position: relative;
+    animation: ani 3s infinite ;
+}
+@keyframes ani {
+    0% {
+        transform: rotatex(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#c2 {
+    position: relative;
+    animation: ani2 3s infinite ;
+}
+@keyframes ani2 {
+    0% {
+        transform: rotatey(0deg);
+    }
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+
+#c3 {
+    position: relative;
+    animation: ani3 3s infinite ;
+}
+@keyframes ani3 {
+    0% {
+        transform: rotatey(0deg);
+    }
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .services {
+        margin-top: -6rem;
+        flex-direction: column;
+        gap: 5rem;
+        height: 55rem;
+        padding: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        margin-left: 15%;
+    }
+
+    .cards>* {
+        position: static;
+    }
+    #c1, #c2, #c3 {
+        position: static;
+    }
+}

@@ -1,0 +1,69 @@
+.contact-form {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 8rem;
+    justify-content: space-between;
+}
+
+.c-left {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    /* font-size: 3rem; */
+    font-weight: bolder;
+}
+
+.c-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right>form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user {
+    width: 25rem;
+    height: 2rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 5px solid orange;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+textarea {
+    height: 4rem !important;
+    font-family: 'Satisfy', cursive;
+}
+
+.done {
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+input {
+    font-family: 'Satisfy', cursive;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        margin-top: -28rem;
+        height: 53rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .c-right textarea{
+      display: flex;
+      justify-content: center;
+        width: 1%;
+    }
+}
