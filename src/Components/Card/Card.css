@@ -38,7 +38,7 @@
   box-shadow: 5px 5px 8px black;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .card>* {
     width: auto;
     gap: 5rem;
