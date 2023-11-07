@@ -54,7 +54,7 @@ input {
     font-family: 'Satisfy', cursive;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
     .contact-form {
         margin-top: -28rem;
         height: 53rem;
